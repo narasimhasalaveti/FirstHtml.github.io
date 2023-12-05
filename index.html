@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+</head>
+<body>
+  <h1>Registration Form</h1>
+  <form action="/submit-form" method="post" enctype="multipart/form-data">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <label for="gender">Gender:</label>
+    <input type="radio" id="gender-male" name="gender" value="male" required>
+    <label for="gender-male">Male</label>
+    <input type="radio" id="gender-female" name="gender" value="female">
+    <label for="gender-female">Female</label>
+
+    <label for="country">Country:</label>
+    <select id="country" name="country" required>
+      <option value="">Select a country</option>
+      <option value="US">United States</option>
+      <option value="CA">Canada</option>
+      <option value="UK">United Kingdom</option>
+      <option value="AU">Australia</option>
+    </select>
+
+    <label for="resume">Resume:</label>
+    <input type="file" id="resume" name="resume" required accept="application/pdf">
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
